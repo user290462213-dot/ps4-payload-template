@@ -1,12 +1,13 @@
 #include "ps4.h"
 
 int _main(struct thread *td) {
-  UNUSED(td);
+    UNUSED(td);
 
-  initKernel();
-  initLibc();
+    initKernel();
+    initLibc();
 
-  printf_notification("Hello World");
+    system("cp /data/bluesphere/acc1.txt /data/bluesphere/bluesphere.txt");
 
-  return 0;
+    return 0;
 }
+
